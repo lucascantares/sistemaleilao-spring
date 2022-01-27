@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SISTEMA DE LEILÃO</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body id="bodyPrincipal">
+
+	<header>
+	<div>
+		<h1 class="titulo"style="font-family: Trebuchet MS, sans-serif; font-size: 30px">Sistema de Leilões</h1>
+		
+	</div>
+	
+	<div>
+	<nav>
+		<ul class="menu">
+			<li><a onclick="mostraLeiloes('cadastro','divConteudo')">TODOS LEILÕES</a></li>
+			<li><a onclick="">ATIVOS</a></li>
+			<li><a onclick="">ENCERRADOS</a></li>
+			
+		</ul>
+	</nav>
+	</div>
+	</header>
+	<div id= "divConteudo">
+	<div align="right">
+	<a href="paginaCadastro.html">
+	<input class="btnAdd" type="button" value="Adicionar Item">
+	</a>
+		
+	</div>
+	
+	
+	<div >
+		
+		<table class="tbl" >
+		<thead>
+		<tr><th>ITEM</th><th>DESCRIÇÃO</th><th>DATA ABERTURA</th><th>LANCE MINIMO</th><th>LANCE ATUAL</th><th>DATA FECHAMENTO</th><th>SITUAÇÃO</th><th></th><th></th></tr>
+		</thead>
+		<tbody id="tblItens">
+		
+		</tbody>
+		</table>
+	</div>	
+		
+	</div>
+		
+		
+	<footer>
+	
+	<div align="right" class="titulo"style="font-family: Trebuchet MS, sans-serif; font-size: 10px">Desenvolvido by Lucas Cantares</div>
+	
+	</footer>
+	
+	 <script src="javascript.js"></script>
+	 
+</body>
+
+
+
+</html>

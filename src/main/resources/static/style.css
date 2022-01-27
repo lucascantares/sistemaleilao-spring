@@ -1,0 +1,119 @@
+@charset "utf-8";
+	
+
+.loginFundo{
+	
+	background: black;
+	
+}
+
+.cadastroParticipante{
+	
+	background: white;
+	width: 400px;
+	height: 500px;
+	text-align: center;
+ 	padding: 20px; 
+    margin: 50px auto;
+    border-radius: 10px;
+	
+	
+}
+
+.login{
+	
+	background: white;
+	width: 400px;
+	height: 300px;
+	text-align: center;
+ 	padding: 20px; 
+    margin: 150px auto;
+    border-radius: 10px;
+	
+	
+}
+
+.btnAdd:hover{
+background-color: gray;
+
+}
+.btnEntrar:hover{
+background-color: gray;
+
+}
+
+.novoleiao.p{
+	
+	
+	width: 400px;
+	height: 100vh;
+	background:rgba(0,0,0,.5);
+	border: 3px groove;
+	padding: 20px;
+    margin: 100px auto;
+	display: flex;
+	
+}
+
+.modal-container.mostrar{
+	
+	display: flex;
+	
+	
+	
+}
+
+@keyframes modal{
+	
+	from{
+	opacity: 0;
+	transform: translate3d(0, -60px, 0);
+	}
+	to{
+	opacity: 1;
+	transform: translate3d(0,0, 0);
+	}
+	
+}
+
+
+thead{
+	background-color: #333;
+	color: white;
+	text-align: left;
+	font-family: Trebuchet MS, sans-serif;
+	
+	
+}
+.tbl{
+	
+	width: 100%;
+	border: 1px solid black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-family: Trebuchet MS, sans-serif;
+  cursor: pointer;
+}
+
+li a:hover {
+			background-color: #111;
+	}
+ 

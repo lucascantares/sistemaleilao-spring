@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SISTEMA DE LEILÃO - CADASTRO</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+ 	<div>
+		<h1 class="titulo"style="font-family: Trebuchet MS, sans-serif; font-size: 30px;">Sistema de Leilões</h1>
+		
+	</div>
+
+	<nav>
+		<ul class="menu">
+			<li><a href="">TODOS LEILÕES</a></li>
+			 <li><a href="">ATIVOS</a></li>
+			<li><a href="">ENCERRADOS</a></li>
+			
+		</ul>
+	</nav>
+	 	
+		<div align="center" class="novoleilao" style="font-family: cursive;">
+			<h3>CADASTRAR NOVO LEILÃO</h3>
+				<form action="leiloes" method="post" enctype="application/json">
+					<p>Item</p>
+					<p><input required="required" type="text" size="100" name="inputItem"></p>
+					<p>Data De Abertura</p>
+					<p><input required="required" type="date" name="inputDataAbertura" onblur=compararDataInicioLeilao(inputDataAbertura)></p>
+					<p>Lance Minimo</p>
+					<p><input required="required" type="number" name="inputLanceMinimo"></p>
+					<p>Data Fechamento</p>
+					<p><input required="required" type="date" name="inputDataFechamento" onblur=compararDataFimLeilao(inputDataAbertura,inputDataFechamento)></p>
+					<p>
+					<input class="btnAdd" type= "submit" name= "btnCancelar" value="Cancelar">
+					<input class="btnAdd" type= "submit" name= "btnsalvar" value="Salvar">
+					</p>
+					
+					
+				
+				</form>
+	</div>
+		
+	<script src="javascript.js"></script>	
+
+</body>
+</html> 
